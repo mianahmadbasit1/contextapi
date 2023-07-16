@@ -1,0 +1,43 @@
+import React from 'react'
+import { data,data1,class1 } from './App'
+
+function ChildC() {
+ 
+    return (
+    <>
+    <data.Consumer>
+        {
+        (name) => {
+      
+            
+           
+        
+            return(
+                         
+                <data1.Consumer>
+                    {
+                        (gender)=>{
+                            return(
+                                <h1> my name is {name} & my gender is {gender}</h1>
+                            )
+                        }
+                    }
+                </data1.Consumer>
+            )
+        }
+        
+        
+        
+        
+        
+        }
+    
+
+
+
+    </data.Consumer>
+  </>
+  )
+}
+
+export default ChildC
